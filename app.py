@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import requests
 import numpy as np
-from scraper_api import ScraperAPIClient
+#from scraper_api import ScraperAPIClient
 
 movies = pickle.load(open('movies.pkl', 'rb'))
 
