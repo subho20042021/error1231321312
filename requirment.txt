@@ -31,8 +31,8 @@ referencing==0.33.0
 requests==2.31.0
 rich==13.7.0
 rpds-py==0.18.0
-scraper-api==0.1.0
-scraperapi-sdk==0.2.2
+scraper-api
+scraperapi-sdk
 six==1.16.0
 smmap==5.0.1
 st-annotated-text==4.0.1
