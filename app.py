@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import request
 import numpy as np
 from scraper_api import ScraperAPIClient
 
@@ -20,7 +21,7 @@ similarity = np.concatenate([v, v1, v2, v3, v4, v5, v6, v7], axis=0)
 
 def getresponse(uid):
     client = ScraperAPIClient('2233b77a536cee35ec5b6a78411717ec')
-    response = client.get(f'https://api.themoviedb.org/3/movie/{uid}?api_key=7e24300fc9f72f2bd7977f808cbcd06f')
+    response = request.get(f'https://api.themoviedb.org/3/movie/{uid}?api_key=7e24300fc9f72f2bd7977f808cbcd06f')
     data = response.json()
     return "https:image.tmdb.org/t/p/w500/" + data['poster_path'], data['overview']
 
