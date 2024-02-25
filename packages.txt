@@ -1,2 +1,2 @@
-scraper-api==0.1.0
-scraperapi-sdk==0.2.2
+scraper-api=0.1.0
+scraperapi-sdk=0.2.2
